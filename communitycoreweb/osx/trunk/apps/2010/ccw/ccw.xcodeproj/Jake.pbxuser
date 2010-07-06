@@ -156,31 +156,12 @@
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
 		scmConfiguration = {
+			repositoryName = "NUICode NXML";
 		};
 	};
 	2388C25F11CBB5AC0041E4C2 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	23B95FA211E3C04A00B10DAA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */;
-		name = "main.cpp: 18";
-		rLen = 0;
-		rLoc = 492;
-		rType = 0;
-		vrLen = 714;
-		vrLoc = 0;
-	};
-	23B95FD711E3CA0700B10DAA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */;
-		name = "main.cpp: 18";
-		rLen = 0;
-		rLoc = 492;
-		rType = 0;
-		vrLen = 714;
-		vrLoc = 0;
 	};
 	23E8AED811DCE11300F06C86 /* ofxNxmlFile.h */ = {
 		uiCtxt = {
@@ -379,12 +360,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 300141065;
-			PBXWorkspaceStateSaveDate = 300141065;
-		};
-		perUserProjectItems = {
-			23B95FA211E3C04A00B10DAA = 23B95FA211E3C04A00B10DAA /* PBXTextBookmark */;
-			23B95FD711E3CA0700B10DAA = 23B95FD711E3CA0700B10DAA /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 300144134;
+			PBXWorkspaceStateSaveDate = 300144134;
 		};
 		sourceControlManager = 2388C25E11CBB5AC0041E4C2 /* Source Control */;
 		userBuildSettings = {
