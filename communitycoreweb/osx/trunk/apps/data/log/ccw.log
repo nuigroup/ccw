@@ -1,0 +1,35 @@
+This is actually sent to cout
+and this to logfile
+This is actually sent to cout
+and this to logfile
+Server setup complete, using params:
+Port: 5555
+Serving from directory: ../../../data/www/
+Upload directory: ../../../data/uploads/
+Callback extension: .ccw
+Max Clients = 5
+AutoStart: true
+Logging to: ../../../data/log/ccw.log
+
+Starting server...
+... server running
+This is actually sent to cout
+Server setup complete, using params:
+Port: 5555
+Serving from directory: ../../../data/www/
+Upload directory: ../../../data/uploads/
+Callback extension: .ccw
+Max Clients = 5
+AutoStart: true
+Logging to: ../../../data/log/ccw.log
+
+This is actually sent to cout
+Server setup complete, using params:
+Port: 5555
+Serving from directory: ../../../data/www/
+Upload directory: ../../../data/uploads/
+Callback extension: .ccw
+Max Clients = 5
+AutoStart: true
+Logging to: ../../../data/log/ccw.log
+
