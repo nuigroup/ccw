@@ -1,0 +1,19 @@
+<ccwconfig>
+	<port>5555</port>
+	
+	<!-- Directories to serve from and upload to -->
+	<servedir>www/</servedir>
+	<uploaddir>uploads/</uploaddir>
+	
+	<callbackextension>.ccw</callbackextension>
+	
+	<maxclients>5</maxclients>
+	<autostart>true</autostart>
+	<index>index.html</index>
+	
+	<!-- If using source and a debugger, comment this line,
+	otherwise use this to redirect output to log file if
+	there are problems 
+	<log>log/ccw.log</log>-->
+	
+</ccwconfig>
