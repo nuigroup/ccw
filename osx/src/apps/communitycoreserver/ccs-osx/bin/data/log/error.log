@@ -1,4 +1,0 @@
-[1279149448] [error] [client 127.0.0.1] GET /: spawn_process: CreateProcess(/php/php-cgi.exe info.php): 3
-[1279149457] [error] [client 127.0.0.1] GET /info.php: spawn_process: CreateProcess(/php/php-cgi.exe info.php): 3
-[1279149460] [error] [client 127.0.0.1] GET /info.php: spawn_process: CreateProcess(/php/php-cgi.exe info.php): 3
-[1279149461] [error] [client 127.0.0.1] GET /info.php: spawn_process: CreateProcess(/php/php-cgi.exe info.php): 3
