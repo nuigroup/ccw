@@ -24,18 +24,25 @@ class ccs : public ofSimpleApp, public ofxGuiListener {
 		void			mousePressed(int x, int y, int button);
 		void			mouseReleased(int x, int y, int button);
 		void			windowResized(int w, int h);
-		
-		ofstream		logFile;
 	
 	private:
 		ofxWebServer	server;
+		ofxXmlSettings	setupFile;
 		
 		void			drawGUI();
 		ofxGui *		svrGui;
 		ofxGuiPanel *	panel1;
 		ofxGuiPanel *	panel2;
-		ofxGuiButton *	svrOnOffBtn;
-		ofxGuiButton *	svrResetBtn;
+		ofxGuiButton *	btnOnOff;
+		ofxGuiButton *	btnReset;
+		ofxGuiButton *  btnAutoRun;
+		ofxGuiButton *	btnLog;
+		ofxGuiButton *  btnDirList;
+		ofxGuiSlider *  sldrPort;
+		ofxGuiButton *	btnPort80;
+		ofxGuiButton *	btnPort888;
+		ofxGuiButton *	btnPort8080;
+		ofxGuiFiles *	filesSrvDir;
 		
 		unsigned int	srvPort;
 		string			srvDir;
@@ -48,12 +55,12 @@ class ccs : public ofSimpleApp, public ofxGuiListener {
 		string			srvErrorLog;	
 		bool			runServerRequest;
 		bool			serverIsRunning;
-		bool			autoStart;
-		
+		bool			srvLogging;
+	
 		void			setupServer();
 		void			startServer();
 		void			stopServer();
-		
+	
 		void			handleGui(int parameterId, int task, void* data, int length);
 		
 		bool			resolveBool(string toTest);
@@ -63,7 +70,15 @@ class ccs : public ofSimpleApp, public ofxGuiListener {
 			ccsPanel1,
 			ccsPanel2,
 			ccsStartStop,
-			ccsReset
+			ccsReset,
+			ccsAutoRun,
+			ccsLog,
+			ccsDirList,
+			ccsPort,
+			ccsPort80,
+			ccsPort888,
+			ccsPort8080,
+			ccsSrvDir
 		};
 };
 
