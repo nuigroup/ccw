@@ -65,6 +65,8 @@ public:
 
 	int				mBorder, mSpacing;
 	
+	bool			inner;
+	
 	vector			<ofxGuiObject*> mObjects;
 };
 

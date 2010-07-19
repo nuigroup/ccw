@@ -1,26 +1,21 @@
 <ccsconfig>
-	<port>80</port>
-	
-	<!-- Directory to serve from  -->
-	<dir>www</dir>
+    <!-- NOTE: On OSX, ports below 1024 are restricted -->
+    <port>80</port>
+    <!-- Directory to serve from  -->
+    <dir>www</dir>
+    <!-- Allow directory listings? -->
+    <dirlist>false</dirlist>
+    <!-- Index files to search for on attempted root access
 
-	<!-- Allow directory listings? -->
-	<dirlist>true</dirlist>
-	
-	<!-- Index files to search for on attempted root access
 	     comma seperated -->
-	<index>index.html,index.htm,index.php,index.nxml</index>
-	
-	<!-- Start the server immediately -->
-	<autostart>true</autostart>
-
-	<maxthreads>20</maxthreads>
-	
-	<!-- Time in seconds connection remains idle -->
-	<idletime>10</idletime>
-
-	<!-- Logfiles -->
-	<accesslog>log/access.log</accesslog>
-	<errorlog>log/error.log</errorlog>
-
+    <index>index.html,index.htm,index.php,index.nxml</index>
+    <!-- Start the server immediately -->
+    <autorun>false</autorun>
+    <maxthreads>20</maxthreads>
+    <!-- Time in seconds connection remains idle -->
+    <idletime>10</idletime>
+    <!-- Logfiles -->
+    <logging>false</logging>
+    <accesslog>log/access.log</accesslog>
+    <errorlog>log/error.log</errorlog>
 </ccsconfig>

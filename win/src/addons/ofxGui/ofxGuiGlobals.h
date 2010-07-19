@@ -62,7 +62,7 @@ public:
 	
 	int				mKnobSize;
 	
-	ofRGBA			mCoverColor, mTextColor, mBorderColor, mFrameColor, mSliderColor, mAxisColor, mHandleColor, mButtonColor, mCurveColor, mScopeColor, mMatrixColor;
+	ofRGBA			mCoverColor, mInCoverColor, mTextColor, mBorderColor, mFrameColor, mSliderColor, mAxisColor, mHandleColor, mButtonColor, mCurveColor, mScopeColor, mMatrixColor;
 
 private:
 	

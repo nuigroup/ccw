@@ -41,8 +41,13 @@ public:
 	static void show403(struct mg_connection *conn, const struct mg_request_info *ri, void *user_data);
 	static void show404(struct mg_connection *conn, const struct mg_request_info *ri, void *user_data);
 	static void logOutput(struct mg_connection *conn, const struct mg_request_info *ri, void *user_data);
-
+	
+	void setLogging(bool setting);
+	void setDirectoryListing(bool setting);
+	
 private:
 	struct mg_context *ctx;
+	string aLogFile;
+	string eLogFile;
 };
 #endif // __OFXWEBSERVER__

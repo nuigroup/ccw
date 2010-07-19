@@ -49,7 +49,7 @@ void ofxGuiRadar::setValue(float value)
 	{
 		float	fraction	= valueToFraction(value);
 		float	steps		= (float)mSteps - 1;
-		float	slice		= (int)((floor(fraction * steps)) / steps );
+		float	slice		= ((fraction * steps) / steps);
 		
 		value = mMinVal + mValDlt * slice;
 	}

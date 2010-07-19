@@ -8,10 +8,16 @@
  */
 
 #include "ofxWebServer.h"
-//#include <netinet/in.h>
-//#include <arpa/inet.h>
-//#include <netdb.h>
+
+#ifdef _WIN32
 #include <winsock2.h>
+#else
+#include <arpa/inet.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#endif // WIN32
+
+
 
 void ipLongToString(long ipLong, char *ipString) {
 	unsigned short a, b, c, d;
@@ -45,7 +51,6 @@ void webserverCallback(struct mg_connection *conn,
 }
 
 ofxWebServer::ofxWebServer() {
-
 }
 
 void ofxWebServer::start(string root, int port, bool dirList, string indexes, int maxThreads, int idleTime, string aLog, string eLog) {
@@ -59,7 +64,35 @@ void ofxWebServer::start(string root, int port, bool dirList, string indexes, in
 	mg_set_option(ctx, "access_log", ofToDataPath(aLog).c_str());
 	mg_set_option(ctx, "error_log", ofToDataPath(eLog).c_str());
 	mg_set_option(ctx, "cgi_ext", "php");
-	mg_set_option(ctx, "cgi_interp", ofToDataPath("php/php-cgi.exe").c_str());
+	
+	#ifdef _WIN32
+		mg_set_option(ctx, "cgi_interp", ofToDataPath("php/php-cgi.exe").c_str());
+	#endif // WIN32
+
+	
+	#ifdef MACOSX
+	// Ugly workaround - osx doesn't like the relative paths
+	// Get the absolute location of the executable file in the bundle.
+	CFBundleRef appBundle     = CFBundleGetMainBundle();
+	CFURLRef   executableURL = CFBundleCopyExecutableURL(appBundle);
+	char execFile[4096];
+	if (CFURLGetFileSystemRepresentation(executableURL, TRUE, (UInt8 *)execFile, 4096))
+	{
+		// Strip out the filename to just get the path
+		string strExecFile = execFile;
+		int found = strExecFile.find_last_of("/");
+		string strPath = strExecFile.substr(0, found);
+		strPath.append("/../../../data/php/php-cgi");
+		mg_set_option(ctx, "cgi_interp", strPath.c_str());
+	}
+	else cout << "Couldn't get absolute path. No PHP. \n";
+	#endif //osx
+
+	
+
+	aLogFile = ofToDataPath(aLog).c_str();
+	eLogFile = ofToDataPath(eLog).c_str();
+	
 	mg_set_error_callback(ctx, 404, &show404, NULL);
 	mg_set_error_callback(ctx, 403, &show403, NULL);
 }
@@ -108,4 +141,18 @@ void ofxWebServer::show403(struct mg_connection *conn, const struct mg_request_i
 }
 void ofxWebServer::logOutput(struct mg_connection *conn, const struct mg_request_info *ri, void *user_data){
 	cout << "[Log] " << user_data << endl;	
+}
+
+void ofxWebServer::setLogging(bool setting) {
+	if (setting == false){
+			mg_set_option(ctx, "access_log", NULL);
+			mg_set_option(ctx, "error_log", NULL);
+	} else {
+		mg_set_option(ctx, "access_log", aLogFile.c_str());
+		mg_set_option(ctx, "error_log", eLogFile.c_str());
+	}
+}
+
+void ofxWebServer::setDirectoryListing(bool setting) {
+		mg_set_option(ctx, "dir_list", ofToString(setting).c_str());
 }

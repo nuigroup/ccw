@@ -42,6 +42,7 @@ public:
 	void			mouseReleased(int x, int y, int button);
 
 	ofxGuiPanel*	addPanel(int id, string name, int x, int y, int border, int spacing);
+	ofxGuiPanel*	addPanel(int id, string name, int x, int y, int border, int spacing, bool inner);
 
 	bool			buildFromXml(string file);
 	void			saveToXml(string file);

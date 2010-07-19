@@ -165,6 +165,19 @@ ofxGuiPanel* ofxGui::addPanel(int id, string name, int x, int y, int border, int
 	return newPanel;
 }
 
+//  ----------------------------------------------------------------------------------------------------
+
+ofxGuiPanel* ofxGui::addPanel(int id, string name, int x, int y, int border, int spacing, bool inner)
+{
+	ofxGuiPanel* newPanel = new ofxGuiPanel();
+	newPanel->init(id, name, x, y, border, spacing);
+	newPanel->inner=inner;
+	mObjects.push_back(newPanel);
+	
+	return newPanel;	
+
+}
+
 //	----------------------------------------------------------------------------------------------------
 
 bool ofxGui::buildFromXml(string file)

@@ -26,13 +26,13 @@ ofxGuiGlobals::ofxGuiGlobals()
 	mXmlfile			= "";
 	
 	mHeadFontName		= "fonts/verdana.ttf";
-	mHeadFontSize		= 10;
+	mHeadFontSize		= 7;
 	mHeadFontXOffset	= -2;
 	mHeadFontYOffset	= 8;
 	mHeadFontHeight		= 12;
 	
-	mParamFontName		= "fonts/automat.ttf";
-	mParamFontSize		= 6;
+	mParamFontName		= "fonts/verdana.ttf";
+	mParamFontSize		= 7;
 	mParamFontXOffset	= -2;
 	mParamFontYOffset	= 6;
 	mParamFontHeight		= 12;
@@ -47,10 +47,11 @@ ofxGuiGlobals::ofxGuiGlobals()
 
 	mKnobSize			= 10;
 
-	mCoverColor			= ofRGBA(0x00000088);
-	mTextColor			= ofRGBA(0xFFFFFFFF);
-	mBorderColor		= ofRGBA(0xFFFFFFFF);
-	mFrameColor			= ofRGBA(0xFFFFFFFF);
+	mCoverColor			= ofRGBA(0xEAEAEAFF);
+	mInCoverColor		= ofRGBA(0xFFFFFFFF);
+	mTextColor			= ofRGBA(0x535353FF);
+	mBorderColor		= ofRGBA(0x535353FF);
+	mFrameColor			= ofRGBA(0x535353FF);
 	mSliderColor		= ofRGBA(0x0099FFFF);
 	mAxisColor			= ofRGBA(0x00FF00FF);
 	mHandleColor		= ofRGBA(0xFFFFFFFF);

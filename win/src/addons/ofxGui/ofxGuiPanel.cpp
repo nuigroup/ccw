@@ -66,7 +66,11 @@ void ofxGuiPanel::draw()
 		ofFill();
 		
 		//	background
-		glColor4f(mGlobals->mCoverColor.r, mGlobals->mCoverColor.g, mGlobals->mCoverColor.b, mGlobals->mCoverColor.a);
+		if (inner) 
+			glColor4f(mGlobals->mInCoverColor.r, mGlobals->mInCoverColor.g, mGlobals->mInCoverColor.b, mGlobals->mInCoverColor.a);
+		else 
+			glColor4f(mGlobals->mCoverColor.r, mGlobals->mCoverColor.g, mGlobals->mCoverColor.b, mGlobals->mCoverColor.a);
+		
 		ofRect(0.0f, 0.0f, mObjWidth, mObjHeight);
 	
 		ofNoFill();
