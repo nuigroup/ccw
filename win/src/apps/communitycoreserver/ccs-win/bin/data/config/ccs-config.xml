@@ -1,6 +1,6 @@
 <ccsconfig>
     <!-- NOTE: On OSX, ports below 1024 are restricted -->
-    <port>80</port>
+    <port>8080</port>
     <!-- Directory to serve from  -->
     <dir>www</dir>
     <!-- Allow directory listings? -->
@@ -10,7 +10,7 @@
 	     comma seperated -->
     <index>index.html,index.htm,index.php,index.nxml</index>
     <!-- Start the server immediately -->
-    <autorun>false</autorun>
+    <autorun>true</autorun>
     <maxthreads>20</maxthreads>
     <!-- Time in seconds connection remains idle -->
     <idletime>10</idletime>
