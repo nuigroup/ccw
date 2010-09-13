@@ -1,0 +1,53 @@
+100910 15:52:40 [Note] Plugin 'FEDERATED' is disabled.
+.\data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 15:52:48 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 15:53:23  InnoDB: Started; log sequence number 0 44233
+100910 15:53:24 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:09:35 [Note] Plugin 'FEDERATED' is disabled.
+.\data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:09:47 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:10:52  InnoDB: Started; log sequence number 0 44233
+100910 17:10:52 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:15:58 [Note] Plugin 'FEDERATED' is disabled.
+.\data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:15:58 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:19:08  InnoDB: Started; log sequence number 0 44233
+100910 17:19:08 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:19:55 [Note] Plugin 'FEDERATED' is disabled.
+data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:19:55 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:19:55  InnoDB: Started; log sequence number 0 44233
+100910 17:19:55 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:22:08 [Note] Plugin 'FEDERATED' is disabled.
+data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:22:08 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:22:08  InnoDB: Started; log sequence number 0 44233
+100910 17:22:08 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:24:30 [Note] Plugin 'FEDERATED' is disabled.
+data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:24:30 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:24:30  InnoDB: Started; log sequence number 0 44233
+100910 17:24:30 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:25:55 [Note] Plugin 'FEDERATED' is disabled.
+.\data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:25:55 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:26:45  InnoDB: Started; log sequence number 0 44233
+100910 17:26:45 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.host' doesn't exist
+100910 17:30:29 [Note] Plugin 'FEDERATED' is disabled.
+data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:30:29 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 17:33:33 [Note] Plugin 'FEDERATED' is disabled.
+data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 17:33:33 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 18:07:39 [Note] Plugin 'FEDERATED' is disabled.
+data\plugins\MySQL\bin\mysqld.exe: Table 'mysql.plugin' doesn't exist
+100910 18:07:39 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+100910 18:07:39  InnoDB: Started; log sequence number 0 44233
+Can't start server: Bind on TCP/IP port: No such file or directory
+100910 18:07:39 [ERROR] Do you already have another mysqld server running on port: 3306 ?
+100910 18:07:39 [ERROR] Aborting
+
+100910 18:07:39  InnoDB: Starting shutdown...
+100910 18:07:44  InnoDB: Shutdown completed; log sequence number 0 44233
+100910 18:07:44 [Note] data\plugins\MySQL\bin\mysqld.exe: Shutdown complete
+

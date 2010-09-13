@@ -1,0 +1,7 @@
+<ccw-plugininfo>
+	<name>MySQL - Windows</name>
+	<version>0.5</version>
+	<author>MySQL</author>
+	<url>http://www.mysql.com/</url>
+	<description>MySQL wrapper for CCW. For more information see the README in plugins/MySQL</description>
+</ccw-plugininfo>

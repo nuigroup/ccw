@@ -1,0 +1,15 @@
+README - MySQL
+-----------------------------
+
+- The socket is in the following locations:
+	- OS X: /Applications/CCW/data/plugins/MySQL/tmp/mysql.sock
+	- Windows: [CCW Base Directory]\data\plugins\MySQL\tmp\mysql.sock
+	
+- Default port is 3306
+
+- Username : root
+- Password : root
+
+- Options may be edited in plugins/MySQL/my.ini
+
+- Remember changes made to my.ini may affect the PHP configuration
