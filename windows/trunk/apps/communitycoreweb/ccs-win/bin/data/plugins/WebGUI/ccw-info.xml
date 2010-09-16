@@ -1,0 +1,9 @@
+<ccw-plugininfo>
+	<name>Web GUI</name>
+	<version>0.1</version>
+	<author>Marek Bereza, Memo Akten</author>
+	<url>http://code.google.com/p/ofxmarek/wiki/ofxWebSimpleGuiTooWebService</url>
+	<description>This is a demonstration of ofxWebSimpleGuiToo, which allows you to create web interfaces for your oF apps. View README in plugins/WebGui for usage information.
+    </description>
+	
+</ccw-plugininfo>

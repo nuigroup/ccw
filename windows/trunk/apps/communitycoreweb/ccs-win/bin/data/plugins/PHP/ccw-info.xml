@@ -1,0 +1,7 @@
+<ccw-plugininfo>
+	<name>PHP</name>
+	<version>0.5</version>
+	<author>PHP team, wrapper by Jake</author>
+	<url>http://www.php.net/</url>
+	<description>PHP compiled for MySQL usage, without the Apache specific stuff.</description>
+</ccw-plugininfo>

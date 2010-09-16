@@ -1,0 +1,21 @@
+README - WebGUI
+-----------------------------
+
+- Multiple GUI pages may be described by duplicating plugins/WebGUI/gui/testGui.xml and altering
+as necessary.
+
+- Start the server and navigate to localhost:8910 (by default)
+
+- Methods of interacting with the GUI:
+	- Use the jQuery client
+	- Make a HTTP GET request (using browser or otherwise) to localhost:8910/control to get a JSON
+		description of the current state of the UI
+	- Making an HTTP GET request (using browser) to localhost:8910/control?key=TestToggle will retrieve the current value of the element named TestToggle.
+    - Making another HTTP GET request to localhost:8910/control?key=TestToggle&amp;value=true will SET the value of the toggle.
+    
+- Networked operation:
+    - You can get the local network IP of the machine running CCW, for example, by opening a terminal
+    	and typing ifconfig -a and examining the output (NOT 127.0.0.1 or 192.168.1.255, the other one)
+    	
+    - Then you can access the UI from another machine on the network in any of the ways detailed above
+    	by replacing 'localhost' with the IP address.
